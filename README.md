@@ -33,15 +33,15 @@ Before contributing to the Pattern Library, make sure all [prerequisites](#prere
 
 ### Pulling Dependencies
 
-Our Pattern Library depends on files from other [Emory Libraries](https://github.com/emory-libraries) projects, such as the [Emory Libraries Sass Framework](https://github.com/emory-libraries/stemplate-sass). These files can be pulled into the Pattern Library from other local repos on your system as needed using the [`grunt pull`](#grunt-pull) command. 
+Our Pattern Library depends on files from other [Emory Libraries](https://github.com/emory-libraries) projects, such as the [Emory Libraries Sass Framework](https://github.com/emory-libraries/stemplate-sass). These files can be pulled into the Pattern Library from other local repos on your system as needed using the [`grunt pull`](#grunt-pull) command.
 
-> Note, the `grunt pull` command has been preconfigured to pull in any files from other (local) repos that the Pattern Library integrates with. You must downlod or `git clone` these repos to your system in a location adjacent to your Pattern Library repo in order for this to work. 
+> Note, the `grunt pull` command has been preconfigured to pull in any files from other (local) repos that the Pattern Library integrates with. You must downlod or `git clone` these repos to your system in a location adjacent to your Pattern Library repo in order for this to work.
 
 ### Pushing Dependencies
 
-Some files within our Pattern Library are utilized by other [Emory Libraries](https://github.com/emory-libraries) projects, such as the [Emory Libraries Style Guide](https://github.com/emory-libraries/style-guide-guide) and [Templating Engine](https://github.com/emory-libraries/templating-engine). These files can be pushed to other local repos on your system as needed using the [`grunt push`](#grunt-push) command. 
+Some files within our Pattern Library are utilized by other [Emory Libraries](https://github.com/emory-libraries) projects, such as the [Emory Libraries Style Guide](https://github.com/emory-libraries/style-guide-guide) and [Templating Engine](https://github.com/emory-libraries/templating-engine). These files can be pushed to other local repos on your system as needed using the [`grunt push`](#grunt-push) command.
 
-> Note, the `grunt push` command has been preconfigured to push out any files to other (local) repos that require some integration with the Pattern Library. You must downlod or `git clone` these repos to your system in a location adjacent to your Pattern Library repo in order for this to work. 
+> Note, the `grunt push` command has been preconfigured to push out any files to other (local) repos that require some integration with the Pattern Library. You must downlod or `git clone` these repos to your system in a location adjacent to your Pattern Library repo in order for this to work.
 
 
 ### Committing Changes
@@ -52,6 +52,11 @@ Comitting changes to the `master` branch is not permitted. You'll need to make c
 ### Scaffolding Patterns
 
 To quickly scaffold new patterns and/or pattern groups, simply use the [`grunt plop`](#grunt-plop) command. This command uses our [Plop](#about-plop) templates to quickly generate the files you need. You can also use this command to call a specific generator directly by passing the desired generator's name into the Grunt task as an argument, like `grunt plop:pattern` or `grunt plop:group`.
+
+
+### Testing Patterns
+
+Our Pattern Library uses [Cypress](https://www.cypress.io/) for unit testing. To get started with creating and/or running unit tests, run `npx cypress open` in your terminal (requires npm `>=5.2.0 `). This will start the Cypress testing server and enable you to write new tests or run any existing ones.
 
 
 ### Automating Tasks
@@ -157,6 +162,10 @@ To learn more about the various tools that we use to build and maintain our Patt
 #### About Plop
 
 [Plop](https://plopjs.com/) is a micro-generator that we use to help quickly scaffold new pieces of our Pattern Library. For more information on what Plop is and how to use it, read through the [Plop documentation](https://plopjs.com/documentation/) or refer to [Plop repo on Github](https://github.com/amwmedia/plop). To learn more about genorating files with Plop, customizing it to meet your needs, and/or extending its functionality, you can also check out the the [Plopfile API](https://plopjs.com/documentation/#plopfile-api) and see what an [example Plopfile](https://github.com/amwmedia/plop/tree/master/example) looks like.
+
+#### About Cypress
+
+[Cypress](https://www.cypress.io/) is a complete testing framework that enables developers to run unit tests and simulate real-time browser testing. For more informaiton on how to use Cypress as a testing tool, including help with writing and running tests, vising the [Cypress documentation](https://docs.cypress.io). Additional information about how to write unit tests and extend the testing tool with plugins can also be found in the [Cypress API](https://docs.cypress.io/api/api/table-of-contents.html). To learn more about Cypress as an open-source project, visit their [Github repo](https://github.com/cypress-io/cypress).
 
 
 ## Usage
