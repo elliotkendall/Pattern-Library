@@ -410,6 +410,13 @@ module.exports = function(grunt) {
     'watch'
   ]);
 
+  /* test */
+  grunt.registerTask('test', [
+    'build:dev',
+    'browserSync',
+    'cypress:open'
+  ]);
+
   /* dist */
   grunt.registerTask('dist', [
     'clean:public',
@@ -424,11 +431,11 @@ module.exports = function(grunt) {
 
   /* export */
   grunt.registerTask('export', 'Exports a pattern and its assets', require('./scripts/export.js'));
-  
+
     /* pull */
   grunt.registerTask('pull', 'Pull the our Sass Framework and other dependencies into our Pattern Library', require('./scripts/pull.js'));
 
   /* push */
   grunt.registerTask('push', 'Push Pattern Library patterns and assets to our Style Guide Guide', require('./scripts/push.js'));
-  
+
 };
