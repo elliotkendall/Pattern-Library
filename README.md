@@ -56,7 +56,7 @@ To quickly scaffold new patterns and/or pattern groups, simply use the [`grunt p
 
 ### Testing Patterns
 
-Our Pattern Library uses [Cypress](https://www.cypress.io/) for unit testing. To get started with creating and/or running unit tests, run `npx cypress open` in your terminal (requires npm `>=5.2.0 `). This will start the Cypress testing server and enable you to write new tests or run any existing ones.
+Our Pattern Library uses [Cypress](https://www.cypress.io/) for unit testing. To get started with creating and/or running unit tests, run `grunt test` in your terminal (requires `npx`, which is shipped with npm `>=5.2.0`). This will start the Cypress testing server and enable you to write new tests or run any existing ones.
 
 
 ### Automating Tasks
@@ -76,6 +76,10 @@ Builds the Pattern Library, listens for changes during development, and enables 
 #### `grunt dist`
 
 Compiles assets and creates production-ready files for distribution.
+
+#### `grunt test`
+
+Builds our Pattern Library and starts our server, then opens an interactive Cypress window for running unit tests
 
 #### `grunt release`
 
