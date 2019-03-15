@@ -12,3 +12,4 @@ src/**/css/*.css.map
 pattern_exports/
 env.json
 secret.json
+accessibility-audit.json

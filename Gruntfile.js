@@ -514,4 +514,7 @@ module.exports = function(grunt) {
   /* status */
   grunt.registerTask('status', 'Update the status of a pattern', require('./scripts/status.js'));
 
+  /* accessibility */
+  grunt.registerTask('audit', 'Audits the accessiblity of patterns.', require('./scripts/audit.js'));
+
 };

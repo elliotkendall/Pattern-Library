@@ -78,6 +78,7 @@
     "lodash": "^4.17.11",
     "minimist": "^1.2.0",
     "moment": "^2.24.0",
+    "pa11y": "^5.1.0",
     "path": "^0.12.7",
     "patternengine-node-handlebars": "^1.0.3",
     "patternlab-node": "^2.12.0",

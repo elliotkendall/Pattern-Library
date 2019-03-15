@@ -161,6 +161,10 @@ grunt status:atoms-button
 | `export`        | Performs a bulk dump of all pattern statuses to `pattern-status.json`.      |
 | `import`        | Performs a bulk update of all pattern statuses from `pattern-status.json`.  |
 
+#### `grunt audit`
+
+Audits the accessibility of rendered patterns against Section 508 compliance standards.
+
 
 ### Exporting Patterns
 
